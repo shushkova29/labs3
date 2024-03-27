@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Игры</title>
+	<title>Математическая логика</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -15,9 +15,27 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEX</title>
+    <script src="http://isp.9pr.ru/mathlibrary/math.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" 
+    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" 
+    crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" 
+    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" 
+    crossorigin="anonymous"></script>
 	<style>
+		input, select {
+				font-size: 25px;
+			}
 
+		table {
+			font-size: 70%;
+		}
 	</style>
+   
+
 </head>
 
 <body>
@@ -30,6 +48,13 @@
 				</script>
 			</section>
 
+			<section data-markdown class="center">
+				<script type="text/template">
+					Логика высказываний
+					----
+				</script>
+			</section>
+
 			<section data-markdown>
 				<script type="text/template">
 					## Логика высказываний -  
@@ -38,6 +63,12 @@
 					</script>
 			</section>
 
+			<section data-markdown class="center">
+				<script type="text/template">
+					Логические операции в классической логике
+					----
+				</script>
+			</section>
 
 			<section data-markdown >
 				<script type="text/template">
@@ -156,6 +187,15 @@
 
 			<section data-markdown class="center">
 				<script type="text/template">
+					Таблица истинности
+					----
+				</script>
+				
+			</section>
+
+
+			<section data-markdown class="center">
+				<script type="text/template">
 					### Таблица истинности - 
 					это таблица, описывающая логическую функцию, 
 					у которой значения переменных (параметров функции) 
@@ -168,20 +208,445 @@
 				</script>
 			</section>
 
-			<section id="Konjunktion">
-				<h3>Таблица истинности.Конъюнкция</h3>
-				 
+			<section id="table_istin">
+				<h3>Таблица истинности </h3>
+				<h3>Коньюнкция </h3>
+				<table class="table table-striped table-bordered table-hover">
+					<tbody>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A & B<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					</tbody>
+					</table>
+			</section>
+
+			
+			
+			
+			<section id="table_istin">
+				<h3>Таблица истинности </h3>
+				<h3>Дизъюнкция </h3>
+				<table class="table table-striped table-bordered table-hover">
+					<tbody>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A||B<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					</tbody>
+					</table>
+					</section>
+
+					<section id="table_istin">
+						<h3>Таблица истинности </h3>
+						<h3>Инверсия </h3>
+						<table class="table table-striped table-bordered table-hover">
+							<tbody>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">¬A<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							</span></td>
+							</tr>
+							</tbody>
+							</table>
+							</section>
+
+				<section id="table_istin">
+				<h3>Таблица истинности </h3>
+				<h3>Импликация </h3>
+				<table class="table table-striped table-bordered table-hover">
+					<tbody>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">A → B<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					<tr style="height: 24px;">
+					<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+					</span></td>
+					</tr>
+					</tbody>
+					</table>
+					</section>
+
+					<section id="table_istin">
+						<h3>Таблица истинности </h3>
+						<h3>Эквивалентность </h3>
+						<table class="table table-striped table-bordered table-hover">
+							<tbody>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">A ↔ B<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							</tr>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							</tr>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							</tr>
+							</tbody>
+							</table>
+							</section>
+
+							<section id="table_istin">
+								<h3>Таблица истинности </h3>
+								<h3>Исключающее или </h3>
+								<table class="table table-striped table-bordered table-hover">
+									<tbody>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">A ⊕ B<br />
+									</span></td>
+									</tr>
+									<tr style="height: 24px;">
+									<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									</tr>
+									<tr style="height: 24px;">
+									<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									</tr>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									</tr>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									</tr>
+									</tbody>
+									</table>
+									</section>
+
+			<section id="table_istin">
+				<h3>Таблица истинности </h3>
+				<h3>Условная дизъюнкция </h3>
+			<table class="table table-striped table-bordered table-hover">
+					<tbody>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">A</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">B</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">C</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">[A,B,C]<br />
+					</span></td>
+					</tr>
+					<tr style="height: 14px;">
+					<td style="text-align: center;"><span style="font-size: 12pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					</tr>
+					<tr style="height: 14px;">
+					<td style="text-align: center;"><span style="font-size: 12pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">0<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					</tr>
+					<tr>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					<td style="text-align: center;"><span style="font-size: 12pt;">1<br />
+					</span></td>
+					</tr>
+					</tbody>
+					</table>
+					</section>
+
+					<section id="table_istin">
+						<h3>Таблица истинности </h3>
+						<h3>Стрелка Пирса </h3>
+						<table class="table table-striped table-bordered table-hover">
+							<tbody>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">A ↓ B<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							</tr>
+							<tr style="height: 24px;">
+							<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							</tr>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							</tr>
+							<tr>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+							</span></td>
+							<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+							</span></td>
+							</tr>
+							</tbody>
+							</table>
+							</section>
+
+							<section id="table_istin">
+								<h3>Таблица истинности </h3>
+								<h3>Штрих Шеффера </h3>
+								<table class="table table-striped table-bordered table-hover">
+									<tbody>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">A</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">B</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">A | B<br />
+									</span></td>
+									</tr>
+									<tr style="height: 24px;">
+									<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									</tr>
+									<tr style="height: 24px;">
+									<td style="text-align: center;"><span style="font-size: 18pt;">0</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									</tr>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									</tr>
+									<tr>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">1<br />
+									</span></td>
+									<td style="text-align: center;"><span style="font-size: 18pt;">0<br />
+									</span></td>
+									</tr>
+									</tbody>
+									</table>
+									</section>
+			
+			<section data-markdown class="center">
+				<script type="text/template">
+					Примеры высказываний
+					----
+				</script>
+			</section>
+
+			<section data-markdown class="center">
+				<script type="text/template">
+					### Примеры высказываний
+					1. «Пётр летом побывает и на море, и в горах»
+					2. «Земля – спутник Луны»
+					3. «Информатика — интересный предмет»
 
 				</script>
 			</section>
 
 			<section data-markdown class="center">
 				<script type="text/template">
-					### Примеры высказывания
-					1. «Пётр летом побывает и на море, и в горах»
-					2. «Земля – спутник Луны»
-					3. «Информатика — интересный предмет»
-
+					Алгоритмы
+					----
 				</script>
 			</section>
 			
@@ -218,6 +683,8 @@
 
 				</script>
 			</section>
+
+			
 
 			<section data-markdown class="center">
 				<script type="text/template">
@@ -269,71 +736,7 @@
 				</script>
 			</section>
 
-			<section id="game_matrix">
-				<h3>Игра 1. Скоростная матрица</h3>
-				<div id="wrapper">
-					<div id="field" class="left"></div>
-					<div id="info" class="right">
-						<div>
-							<input type="text" id="name" value="round">
-							<div id="round"></div>
-							<div id="time"></div>
-							<div id="find">Цвет ячейки</div>
-							<div id="score"></div>
-							<div>
-								<input type="button" id="start" value="Начать игру">
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</section>
-
-			<section id="game_matrix_table">
-				<h3>Турнирная таблица</h3>
-				<div id="table"></div>
-			</section>
-
-			<section data-markdown class="center">
-				<script type="text/template">
-					## Игра 2. Пинг-понг
-				</script>
-			</section>
-
-			<section data-markdown class="center">
-				<script type="text/template">
-					## Игра 2. Пинг-понг
-						Правила иры: игровое поле разделено на 2 части. 
-						Слева и с права находятся двигающиеся вверх и 
-						вниз ракетки игроков, которые отбивают шар по 
-						линейнойтраектории. В случае, если шар был отбит 
-						он меняет свою траекторию. Если шар улител за переделы 
-						игрового поля, одно очко доствется тому, кто отбил 
-						этот шар последним.    
-					</script>
-			</section>
-
-			<section data-markdown class="center">
-				<script type="text/template">
-					## Игра 2. Пинг-понг
-						Начисление очков: 1 очко,выигравшему раундов
-						Длительность: до первой ошибки игрока. Игра до 3 очков   
-					</script>
-			</section>
-
-			<section id="pingpong">
-				<h3>Игра 2. Пинг-понг</h3>
-				<div class="flex">
-					<div id="field">
-						<input type="name" id="gamer" value="renard">
-						<input type="button" id="game_ping_pong_start" value="Присоедениться к игре">
-						<canvas id="game_ping_pong" width="720" height="480"></canvas>
-					</div>
-					<div id="joystick">
-						<input type="range" min="75" max="480" value="240" orient="vertical" disabled />
-					</div>
-				</div>
-			</section>
+			
 
 			<section data-markdown class="center">
 				<script type="text/template">
@@ -343,14 +746,18 @@
 
 			<section>
 				<h3>Веселые картинки<h3>
-						<img src="https://www.kartinki24.ru/uploads/gallery/main/185/kartinki24_ru_despicable_me_09.jpg"
+						<img src="https://www.kartinki24.ru/uploads/gallery/main/185/kartinki24_ru_
+						despicable_me_09.jpg"
 							alt="">
 			</section>
 
-			<section
-				data-background-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2h3BKnU-iWD6aKRGsG8fLmUgQjj08LILLg&usqp=CAU"
-				data-menu-title="кекс">
+			<section>
+				<h3>Веселые картинки<h3>
+						<img src="https://thypix.com/wp-content/uploads/lustige-tiere-185.jpg"
+							alt="">
 			</section>
+
+			
 
 			<section data-markdown class="center">
 				<script type="text/template">
@@ -360,8 +767,11 @@
 
 		</div>
 	</div>
+	
 
-	<script src="dist/reveal.js"></script>
+
+	</script>
+  	 <script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
@@ -370,8 +780,8 @@
 
 	<script src="pingpong/easel.js"></script>
 	<script src="pingpong/Tween.js"></script>
-	<script>
-		// More info about initialization & config:
+	<script> 
+		 // More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
 		Reveal.initialize({
@@ -390,29 +800,11 @@
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
-	</script>
-	<script>
-		class Konjunktion {
-			
-			}
-			
+		</script>
 
-			/*generateColors(colors) {
-				let num = randomInteger(6);
-				this.find = colors[num];
-				for (let i = 0; i < 7; i++) {
-					this.colors = this.colors.concat(Array(i == num ? 1 : 4).fill(colors[i]));
-				}
-				console.log(this.colors);
-				return this;
-			}
-
-			setFindColor(element) {
-				element.style.backgroundColor = this.find;
-				return this;
-			}
-
-			generateField() {
+		<script>
+			generateField() 
+			{
 				this.field = `
 					<table>
 					`;
@@ -429,429 +821,10 @@
 				return this;
 			}
 
-			fillField(element) {
-				element.innerHTML = this.field;
-				return this;
-			}
-
-			shuffleTd() {
-				for (let i = this.colors.length - 1; i > 0; i--) {
-					let j = Math.floor(Math.random() * (i + 1));
-					[this.colors[i], this.colors[j]] = [this.colors[j], this.colors[i]];
-				}
-				return this;
-			}
-
-			updateField(tds) {
-				for (let i = 0; i < this.colors.length; i++) {
-					tds[i].style.backgroundColor = this.colors[i];
-				}
-				return this;
-			}
-		}*/
-
-		function randomInteger(max) {
-			return Math.floor(Math.random() * (max + 1));
-		}
-
-		function randomRgbColor() {
-			let r = randomInteger(255);
-			let g = randomInteger(255);
-			let b = randomInteger(255);
-			return `rgb(${r},${g},${b})`
-		}
-		let colors = [
-			'rgb(255, 0, 0)',
-			'rgb(0, 255, 0)',
-			'rgb(0, 0, 255)',
-			'rgb(255, 255, 0)',
-			'rgb(255, 255, 255)',
-			'rgb(34, 34, 34)',
-		];
-		colors.push(randomRgbColor());
-
-		let timeScore = 0;
-		const getScore = () => {
-			socketMatrix = io('http://game.9pr.ru/matrix');
-			socketMatrix.emit('getScore', (table) => {
-				console.log(table);
-				let scoreTable = `<table><thead><tr><th>Место</th><th>Ник</th><th>Баллы</th></tr></thead><tbody>`;
-				for (let i in table) {
-					scoreTable += `<tr><th>${+i+1}</th><th>${table[i].name}</th><th>${table[i].score}</th></tr>`;
-				}
-				scoreTable += `</tbody></table>`;
-				document.querySelector('#game_matrix_table #table').innerHTML = scoreTable;
-
-			});
-		}
-			let canvas;
-			let stage;
-			let container = new Container();
-			let bgImg = new Image();
-			let bg;
-			let leftPlayerImg = new Image();
-			let leftPlayer;
-			let rightPlayerImg = new Image();
-			let rightPlayer;
-			let ballImg = new Image();
-			let ball;
-			let leftPlayerScore;
-			let rightPlayerScore;
-			let xSpeed = 5;
-			let ySpeed = 5;
-			let gfxLoaded = 0;
-			let tkr = new Object;
-			let x = 480 * 1.5;
-			let y = 320 * 1.5;
-			let ballSize = 30;
-			let collisionX = 22;
-			let collisionY = 75;
-			let scoreTotal = 3;
-			let side = 'right';
-
-			function pingPongMain(element) {
-				canvas = element;
-				stage = new Stage(canvas);
-				stage.mouseEventsEnabled = true;
-				bgImg.src = 'pingpong/bg.png';
-				bgImg.name = 'bg';
-				bgImg.onload = loadGfx;
-				leftPlayerImg.src = 'pingpong/paddle.png';
-				leftPlayerImg.name = 'leftPlayer';
-				leftPlayerImg.onload = loadGfx;
-				ballImg.src = 'pingpong/ball.png';
-				ballImg.name = 'ball';
-				ballImg.onload = loadGfx;
-				rightPlayerImg.src = 'pingpong/paddle.png';
-				rightPlayerImg.name = 'rightPlayer';
-				rightPlayerImg.onload = loadGfx;
-				Ticker.setFPS(30);
-				Ticker.addListener(stage);
-				///////////////////////////
-				socketPingPong = io("http://game.9pr.ru/pingpong");
-				socketPingPong.on('connect', () => {
-					socketPingPong.emit("createField", '' + Math.floor(Math.random() * 9999999));
-					socketPingPong.on("wait", (body) => {
-						if (Object.keys(body.gamers).length == 1) {
-							leftPlayerWait.online = true;
-							side = 'left';
-						}
-						if (Object.keys(body.gamers).length == 2) {
-							leftPlayerWait.online = true;
-							rightPlayerWait.online = true;
-						}
-						waitGameStart();
-					});
-					socketPingPong.on("getY", (body) => {
-						console.log(body);
-						if (body.gamer !== document.querySelector('#gamer').value) {
-							if (side === 'left') {
-								rightPlayer.y = y - body.y;
-							} else {
-								leftPlayer.y = y - body.y;
-							}
-						}
-					});
-				});
-				/////////////////////////////////////
-			}
-
-			function loadGfx(e) {
-				if (e.target.name = 'bg') {
-					bg = new Bitmap(bgImg);
-				}
-				if (e.target.name = 'leftPlayer') {
-					leftPlayer = new Bitmap(leftPlayerImg);
-				}
-				if (e.target.name = 'ball') {
-					ball = new Bitmap(ballImg);
-				}
-				if (e.target.name = 'rightPlayer') {
-					rightPlayer = new Bitmap(rightPlayerImg);
-				}
-				gfxLoaded++;
-				if (gfxLoaded == 4) {
-					addGameView();
-				}
-			}
-
-			function addGameView() {
-				stage.addChild(bg, container);
-				leftPlayer.x = 2;
-				leftPlayer.y = y / 2 - collisionY / 2;
-				rightPlayer.x = x - 25;
-				rightPlayer.y = y / 2 - collisionY / 2;
-				ball.x = x / 2 - ballSize / 2;
-				ball.y = y / 2 - ballSize / 2;
-				leftPlayerWait = new Text('Ожидание игрока', 'bold 28px Arial', '#A3FF24');
-				leftPlayerWait.maxWidth = 1000;
-				leftPlayerWait.x = 60;
-				leftPlayerWait.y = y / 3;
-				leftPlayerWait.online = false;
-				rightPlayerWait = new Text('Ожидание игрока', 'bold 28px Arial', '#A3FF24');
-				rightPlayerWait.maxWidth = 1000;
-				rightPlayerWait.x = x / 2 + 60;
-				rightPlayerWait.y = y / 3;
-				rightPlayerWait.online = false;
-				leftPlayerScore = new Text('0', 'bold 28px Arial', '#A3FF24');
-				leftPlayerScore.maxWidth = 1000;
-				leftPlayerScore.x = x / 2 - 30;
-				leftPlayerScore.y = 30;
-				rightPlayerScore = new Text('0', 'bold 28px Arial', '#A3FF24');
-				rightPlayerScore.maxWidth = 1000;
-				rightPlayerScore.x = x / 2 + 10;
-				rightPlayerScore.y = 30;
-				stage.addChild(leftPlayerWait, rightPlayerWait, leftPlayerScore, rightPlayerScore, leftPlayer,
-					rightPlayer, ball);
-				stage.update();
-			}
+			
+			
+		</script>
 	
-		window.onload = () => {
-			let gameMatrix = new GameMatrix();
-			if (sessionStorage.getItem('game_matrix_round') === null) {
-				sessionStorage.setItem('game_matrix_round', 1);
-			}
-			document.querySelector('#game_matrix #round').innerHTML =
-				`Раунд ${sessionStorage.getItem('game_matrix_round')}`;
-
-			gameMatrix.generateColors(colors).setFindColor(document.querySelector('#game_matrix #find')).shuffleTd()
-				.generateField().
-			fillField(document.querySelector('#game_matrix #field'));
-
-			document.querySelector('#game_matrix #start').onclick = () => {
-				if (document.querySelector('#game_matrix #name').value.trim() == '') {
-					return alert('Введите Ваше имя');
-				}
-
-				const scoreCount = (e) => {
-					console.log(gameMatrix.find, e.target.style.backgroundColor);
-					if (gameMatrix.find === e.target.style.backgroundColor) {
-						sessionStorage.setItem('game_matrix_score',
-							+sessionStorage.getItem('game_matrix_score') + 1200 +
-							timeScore
-						);
-					} else {
-						sessionStorage.setItem('game_matrix_score',
-							+sessionStorage.getItem('game_matrix_score') - 1200 -
-							800 + timeScore
-						);
-
-					}
-					gameMatrix.shuffleTd().updateField(document.querySelectorAll('#game_matrix #field td'));
-					clearInterval(interval);
-					document.querySelector('#game_matrix #score').innerHTML =
-						`Результат <br> ${sessionStorage.getItem('game_matrix_score')}
-						баллов`;
-				}
-				socket = io("http://game.9pr.ru/matrix");
-				if (sessionStorage.getItem('game_matrix_score') == null) {
-					sessionStorage.setItem('game_matrix_score', 0);
-				}
-				document.querySelector('#game_matrix #score').innerHTML = `
-					Результат <br> ${sessionStorage.getItem('game_matrix_score')}
-					баллов
-					`;
-
-				const timeRound = [0, 5, 5, 5];
-				let timeRemaind = timeRound[sessionStorage.getItem('game_matrix_round')] * 1000;
-				document.querySelector('#game_matrix #time').innerHTML = `
-					Ост.время <br> ${timeRound[sessionStorage.getItem('game_matrix_round')]}с.
-					`;
-				timeScore = 800;
-				let interval = setInterval(
-					() => {
-
-						if (timeRemaind <= 0) {
-							clearInterval(interval);
-						} else {
-							gameMatrix.shuffleTd().updateField(document.querySelectorAll(
-								'#game_matrix #field td'))
-						}
-					}, 800
-
-				);
-				let time = setInterval(() => {
-					timeRemaind -= 10;
-					timeScore -= 10;
-					if (timeRemaind <= 0) {
-						clearInterval(time);
-						document.querySelector('#game_matrix table').addEventListener('click', scoreCount);
-						document.querySelector('#game_matrix #start').style.dispiay = 'block';
-						document.querySelector('#game_matrix #time').innerHTML = '';
-						document.querySelector('#game_matrix table').removeEventListener('click', scoreCount);
-						if (sessionStorage.getItem('game_matrix_round') < 3) {
-							sessionStorage.setItem('game_matrix_round',
-								+sessionStorage.getItem('game_matrix_round') + 1);
-						} else {
-							sessionStorage.setItem('game_matrix_round', 1);
-							socket.emit('sendScore', {
-								name: document.querySelector('#game_matrix #name').
-								value.trim(),
-								score: sessionStorage.getItem('game_matrix_score'),
-							});
-							sessionStorage.getItem('game_matrix_score', 0);
-							Reveal.next();
-						}
-						document.querySelector('#game_matrix #round').innerHTML =
-							'Раунд' + sessionStorage.getItem('game_matrix_round')
-
-					} else {
-						document.querySelector('#game_matrix #start').style.dispiay = 'none';
-						document.querySelector('#game_matrix #time').innerHTML = `
-							Ост.время <br> ${timeRemaind/1000}с`;
-					}
-				}, 10);
-
-				if (sessionStorage.getItem('game_matrix_round') == 1) {
-					sessionStorage.setItem('game_matrix_score', 0);
-
-				}
-				document.querySelector('#game_matrix table').addEventListener('click', scoreCount);
-
-			}
-			getScore();
-			Reveal.on('slidechanged', (e) => {
-				if (e.currentSlide.id == 'game?_matrix_table') {
-
-				}
-			});
-
-			pingPongMain(document.querySelector('#game_ping_pong'));
-			document.querySelector('#game_ping_pong_start').onclick = () => {
-				document.querySelector('#gamer').disabled = true;
-				document.querySelector('#game_ping_pong_start').disabled = true;
-				socketPingPong.emit('join', {
-					gamer: document.querySelector('#gamer').value,
-				}, (body) => {
-					if (body.error !== undefined) {
-						alert(body.error);
-					}
-				});
-			};
-			////################
-			document.querySelector('#joystick input').addEventListener("input", movePaddle);
-			////################
-		};
-		/// Выше ///
-		function waitGameStart() {
-			if (leftPlayerWait.online) {
-				stage.removeChild(leftPlayerWait);
-			}
-			if (rightPlayerWait.online) {
-				stage.removeChild(rightPlayerWait);
-			}
-			if (leftPlayerWait.online && rightPlayerWait.online) {
-				let digits = ['0', '1', '2', '3'];
-				threeTwoOneStart = new Text(digits.pop(), 'bold 48px Arial', '#A3FF24');
-				threeTwoOneStart.maxWidth = 1000;
-				threeTwoOneStart.x = x / 2 - 15;
-				threeTwoOneStart.y = y / 3;
-				stage.addChild(threeTwoOneStart);
-				let interval = setInterval(() => {
-					threeTwoOneStart.text = digits.pop();
-					stage.update();
-					if (+threeTwoOneStart.text === 0) {
-						clearInterval(interval);
-						stage.removeChild(threeTwoOneStart);
-						document.querySelector('#joystick input').disabled = false;
-						startGame();
-					}
-				}, 1000);
-			}
-		}
-
-		function startGame(e) {
-			bg.onPress = null;
-			Ticker.addListener(tkr, false);
-			tkr.tick = updateTick;
-		}
-
-		function updateTick() {
-			ball.x = ball.x + xSpeed;
-			ball.y = ball.y + ySpeed;
-			if ((ball.y) < 0) {
-				ySpeed = -ySpeed;
-			};
-			if ((ball.y + ballSize) > y) {
-				ySpeed = -ySpeed;
-			};
-			if (ball.x + ballSize > rightPlayer.x && ball.x + ballSize < rightPlayer.x + collisionX && ball.y >= rightPlayer
-				.y && ball.y < rightPlayer.y + collisionY) {
-				xSpeed *= -1;
-			}
-			if (ball.x <= leftPlayer.x + collisionX && ball.x > leftPlayer.x && ball.y >= leftPlayer.y && ball.y < leftPlayer
-				.y + collisionY) {
-				xSpeed *= -1;
-			}
-			if ((ball.x) < 0) {
-				xSpeed = -xSpeed;
-				rightPlayerScore.text = +rightPlayerScore.text + 1;
-				resetField();
-			}
-			if ((ball.x + ballSize) > x) {
-				xSpeed = -xSpeed;
-				leftPlayerScore.text = +leftPlayerScore.text + 1;
-				resetField();
-			}
-		}
-		////################ Выше
-		function resetField() {
-			document.querySelector('#joystick input').disabled = true;
-			ball.x = x / 2 - ballSize / 2;
-			ball.y = y / 2 - ballSize / 2;
-			leftPlayer.y = y / 2 - collisionY / 2;
-			rightPlayer.y = y / 2 - collisionY / 2;
-			stage.onMouseMove = null;
-			Ticker.removeListener(tkr);
-			if (checkWin()) {
-				waitGameStart();
-			}
-			//bg.onPress = startGame;
-		}
-
-		function checkWin() {
-			if (+leftPlayerScore.text === scoreTotal) {
-				document.querySelector('#gamer').disabled = false;
-				document.querySelector('#game_ping_pong_start').disabled = false;
-				return whoIsWinner('Победа левого', 'left');
-			} else if (+rightPlayerScore.text === scoreTotal) {
-				document.querySelector('#gamer').disabled = false;
-				document.querySelector('#game_ping_pong_start').disabled = false;
-				return whoIsWinner('Победа правого', 'right');
-			}
-			return true;
-		}
-
-		function whoIsWinner(winner, cite) {
-			Ticker.removeListener(tkr);
-			stage.onMouseMove = null;
-			bg.onPress = null
-
-			e = new Text(winner, 'bold 28px Arial', '#A3FF24');
-			e.maxWidth = 1000;
-			e.x = cite === 'left' ? 70 : x / 2 + 70;
-			e.y = 3 * y / 4;
-			stage.addChild(e);
-			Tween.get(e).to({
-				y: y / 4
-			}, 300);
-			bg.onPress = addGameView;
-			return false;
-		}
-
-		function movePaddle(e) {
-			if (side === 'left') {
-				leftPlayer.y = y - e.target.value;
-			} else {
-				rightPlayer.y = y - e.target.value;
-			}
-			let stageY = e.stageY < 0 ? 0 : (e.stageY > y ? y : e.stageY);
-			socketPingPong.timeout(100).emit('sendY', {
-				gamer: document.querySelector('#gamer').value,
-				y: e.target.value
-			});
-		}
-	</script>
 </body>
 
 </html>
